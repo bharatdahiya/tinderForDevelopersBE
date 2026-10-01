@@ -10,7 +10,6 @@ function generateKeys(val) {
 }
 function memoize(func) {
   // throw 'Not implemented';
-  debugger;
   const cache = new Map();
   return function (...args) {
     const key = args.map(generateKeys).join(",");
