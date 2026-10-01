@@ -30,7 +30,7 @@ authRouter.post("/signup", async (req, res) => {
   }
 });
 
-authRouter.get("/login", async (req, res) => {
+authRouter.post("/login", async (req, res) => {
   const { email, password } = req.body;
   if (!email || !password) {
     res.status(400).send("Email and password are required");
